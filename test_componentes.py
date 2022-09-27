@@ -81,11 +81,11 @@ def test_exe4_ula():
 
         selecao.next = 0
         yield delay(1)
-        assert resultado == (a and b)
+        assert resultado == (a & b)
 
         selecao.next = 1
         yield delay(1)
-        assert resultado == (a or b)
+        assert resultado == (a | b)
 
         selecao.next = 1
         inverte_a.next = 1

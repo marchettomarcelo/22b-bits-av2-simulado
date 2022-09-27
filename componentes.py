@@ -62,8 +62,13 @@ def exe4_ula(a, b, inverte_a, inverte_b, c_in, c_out, selecao, zero, resultado):
         a_invertido.next = not a
         b_invertido.next = not b
 
-        or_out.next = a_pos_inversor or b_pos_inversor
-        and_out.next = a_pos_inversor and b_pos_inversor
+        print("EX.......")
+        print(a_pos_inversor, a)
+        # print(a_pos_inversor | b_pos_inversor)
+        print(" ")
+
+        or_out.next = a_pos_inversor | b_pos_inversor
+        and_out.next = a_pos_inversor & b_pos_inversor
 
         
         zero_ = False
